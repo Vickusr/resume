@@ -1,0 +1,47 @@
+Role,Category,ListHeadingNbr,ListItem,Content,Company,Role_Start_Date,Role_End_Date,icon
+Candidate Engineer,notable work,1,0,Inventory management:,Sasol,2013/01/01,2014/06/30,cubes
+Candidate Engineer,notable work,1,1,Evaluating inventory models for various stocking strategies.,Sasol,2013/01/01,2014/06/30,cubes
+Candidate Engineer,notable work,1,2,"Design of inventory framework on what items to store ie. consignment, vendor held etc.",Sasol,2013/01/01,2014/06/30,cubes
+Candidate Engineer,notable work,2,0,Project management on factory unit replacement,Sasol,2013/01/01,2014/06/30,stream
+Candidate Engineer,notable work,2,1,"Heater replacement, done in 3 weeks, was on the critical path, the startup for this unit was on time.",Sasol,2013/01/01,2014/06/30,stream
+Candidate Engineer,notable work,2,2,"Management of unit upgrades for the entire factory to adhere to fuel specifications in 5 years time, the startup for this unit
+completed ahead of time.",Sasol,2013/01/01,2014/06/30,stream
+Candidate Engineer,notable work,3,0,Supply Chain Optimisation,Sasol,2013/01/01,2014/06/30,truck
+Candidate Engineer,notable work,3,1,"Build a value stream map to identify bottlenecks in the Ammonia supply chain. Designs on different solutions to optimise the supply chain. After the project, the analysis, design and value stream map was used as the base for managing the logistics of the supply chain, which lead to a significant cost saving of R70 Million over the course of 2 years. ",Sasol,2013/01/01,2014/06/30,truck
+Candidate Engineer,notable work,4,0,"Passed my candidate engineering panel, thereafter recommended to start performing as an engineer level1.",Sasol,2013/01/01,2014/06/30,user-graduate
+Reliability Engineer,notable work,5,0,Notable work,Sasol,2014/07/01,2016/09/30,exclamation-circle
+Reliability Engineer,notable work,5,1,"Rewrote the entire root cause analysis work method, in excel, this saved 50% of the users time in doing the analysis and
+completing the document and capturing the data more accurately.",Sasol,2014/07/01,2016/09/30,exclamation-circle
+Reliability Engineer,notable work,5,2,"Automated the MTBF data analysis in excel to produce a dashboard ease of use. This saved a weeks worth of work for the
+technicians every month.",Sasol,2014/07/01,2016/09/30,exclamation-circle
+Reliability Engineer,notable work,5,3,Automated the reliability engineering reports which cut the time it took to produce the report by 25%.,Sasol,2014/07/01,2016/09/30,exclamation-circle
+Reliability Engineer,notable work,5,4,Many other VBA written tools to optimise day-to-day workflow & reporting.,Sasol,2014/07/01,2016/09/30,exclamation-circle
+Reliability Engineer,day to day,5,0,Day to day work,Sasol,2014/07/01,2016/09/30,retweet
+Reliability Engineer,day to day,5,1,"Conducting major root cause analysis of complex equipment, consisting of deep analysis and writing the reports on these root cause failures.",Sasol,2014/07/01,2016/09/30,retweet
+Reliability Engineer,day to day,5,2,"Conducted Risk-Based Inspections to ensure the factory units adhere to requirements of law and to keep the units operational, effective and safe.",Sasol,2014/07/01,2016/09/30,retweet
+Reliability Engineer,day to day,5,3,Conduct critical spare analysis to ensure critical spares of the correct quantity is available to keep factory operational with minimal capital investment.,Sasol,2014/07/01,2016/09/30,retweet
+WMS Process Engineer,notable work,12,0,Notable work,Takealot.com,2016/10/01,2017/07/31,exclamation-circle
+WMS Process Engineer,notable work,12,1,"Design and roll-out of pick and pass process, this decreased the parcels per order by 10%, thus a 10% cost saving on packaging.",Takealot.com,2016/10/01,2017/07/31,exclamation-circle
+WMS Process Engineer,notable work,12,2,"Conveyor system integration and installation, this consisted of testing and configuration of the WMS system.",Takealot.com,2016/10/01,2017/07/31,exclamation-circle
+WMS Process Engineer,notable work,12,3,"Designed, wrote the specification, tested, configured and implemented the Advanced Shipping Notice integration between the PO and
+the WMS system, this removed the manual shipment creation by the users and built the foundation for the automated booking system, Auto-payments (3 way matching), Drop shipping, Supplier management",Takealot.com,2016/10/01,2017/07/31,exclamation-circle
+WMS Process Engineer,day to day,12,0,Day to day work,Takealot.com,2016/10/01,2017/07/31,retweet
+WMS Process Engineer,day to day,12,1,"Testing exceptional cases, logging tickets for those cases to address in the correct manner.",Takealot.com,2016/10/01,2017/07/31,retweet
+WMS Process Engineer,day to day,12,2,Updating system configuration.,Takealot.com,2016/10/01,2017/07/31,retweet
+WMS Process Engineer,day to day,12,3,Error handling and resolution.,Takealot.com,2016/10/01,2017/07/31,retweet
+WMS Process Engineer,day to day,12,4,Production queries.,Takealot.com,2016/10/01,2017/07/31,retweet
+WMS Process Engineer,day to day,12,5,Contributing to system enhancements and development,Takealot.com,2016/10/01,2017/07/31,retweet
+Supply Chain Analyst,notable work,20,0,"End-to-end simulation of the supply chain with the incorporation of the business forecast to translate the forecast into an
+operational daily plan. This would go on to form the basis of the budget model within the supply chain.",Takealot.com,2017/08/01,2019/11/30,boxes
+Supply Chain Analyst,notable work,21,0,"Built the platform for geospatial analysis so that more people could contribute to takealot.com delivery network, resulting in
+5-7% additional allocation into the takealot delivery network.",Takealot.com,2017/08/01,2019/11/30,map-marked-alt
+Supply Chain Analyst,notable work,22,0,"Perform various GIS analyses, identifying areas where takealot needs to deliver to, this leads to more orders into the takealot
+network and drives a minimum of R2 million cost saving. Together with using clustering to identify where the takealot network
+can grow towards, further driving cost savings.",Takealot.com,2017/08/01,2019/11/30,globe-africa
+Supply Chain Analyst,notable work,23,0,"Apply machine learning methods to automate forecasting in MR.D Food orders. This allowed for scaled forecasting for the
+delivery hubs, this lead to a 20~30% improvement in forecasting.",Takealot.com,2017/08/01,2019/11/30,laptop-code
+Supply Chain Analyst,notable work,24,0,"Performing budget functions that serve as the input for warehouse storage and operational requirements this analysis
+translates into capacity upgrades for stock and workforce including the branches for the network.",Takealot.com,2017/08/01,2019/11/30,money-bill-alt
+Supply Chain Analyst,notable work,25,0,Sizing of various facility and equipment assets.,Takealot.com,2017/08/01,2019/11/30,warehouse
+Supply Chain Analyst,notable work,26,0,Upskilling team members in introducing them to new methods and approaches to problems.,Takealot.com,2017/08/01,2019/11/30,chalkboard-teacher
+Supply Chain Analyst,notable work,27,0,Create and improve database for supply chain which forms the basis for supply chain planning today,Takealot.com,2017/08/01,2019/11/30,database
