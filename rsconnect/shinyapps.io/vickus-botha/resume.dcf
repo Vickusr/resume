@@ -5,6 +5,6 @@ account: vickus-botha
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 2061463
-bundleId: 2972388
+bundleId: 2982276
 url: https://vickus-botha.shinyapps.io/resume/
-when: 1586112107.77705
+when: 1586283561.94869

@@ -26,7 +26,7 @@ build_line_item <- function(timeline, role, category, show_label = T){
     temp <- timeline %>% filter(Role == role, Category == category) %>% arrange(desc(ListHeadingNbr),ListItem)
     
     if(show_label == T){
-        build_list <- list(timelineLabel(paste(temp$Role[1],sep='')))
+        build_list <- list(timelineLabel(paste(temp$Role[1]," | ",temp$Company[1]," | ",temp$Role_Start_Date[1], ' to ', temp$Role_End_Date[1],sep='')))
     }else{
         build_list <- list()
     }
@@ -42,11 +42,17 @@ build_line_item <- function(timeline, role, category, show_label = T){
         temp_heading_w_listitems <- get_heading_with_items(temp,heading_nbr = heading)
         #print(temp_heading_w_listitems$Content[1])
         
-        if(nrow(temp_heading_w_listitems)>1){
+        if(nrow(temp_heading_w_listitems)>2){
             temp_listitems <- temp_heading_w_listitems %>% filter(ListItem != 0)
             temp_listitems <- tags$ol(
                 map(temp_listitems$Content,tags$li)
             )
+        }else if(nrow(temp_heading_w_listitems)==2){
+            temp_listitems <- temp_heading_w_listitems %>% filter(ListItem != 0)
+            temp_listitems <- tags$p(
+                temp_listitems$Content
+                )
+            
         }else{
             temp_listitems <- NULL
         }
@@ -54,6 +60,7 @@ build_line_item <- function(timeline, role, category, show_label = T){
         build_list[[k]] <- timelineItem(
             title = temp_heading_w_listitems$Content[1],
             icon = temp_heading_w_listitems$icon[1],
+            
             temp_listitems
         )
         
@@ -81,26 +88,41 @@ ui <- dashboardPagePlus(title = 'Vickus Botha CV',skin = 'blue',
                             tabItems(
                                 tabItem('resume',
                                         fluidRow(
+                                        column(6,
+                                               fluidRow(
                                             widgetUserBox(
                                                 title = "Vickus Botha",
                                                 subtitle = "Industrial Engineer",
-                                                width = 6,
+                                                width = 12,
                                                 type = 2,
                                                 src = "profile2.jpg",
                                                 color = "blue",
                                                 profile_summary,
                                                 footer = tagList(
+                                                    column(6,
                                                     tags$p( icon('birthday-cake')," : ",'1990-11-16 | 29 years old'),
                                                     tags$p( icon('at')," : ",'vickus.r.botha@gmail.com'),
                                                     tags$p(icon('phone-square')," : ",'(+27) 072 211 7017'),
                                                     tags$p(icon('home')," : ",'Agulhas Close, Loevenstein, Cape Town, 7530'),
                                                     socialButton(url = 'https://github.com/Vickusr',type = 'github'),
-                                                    socialButton(url = 'https://www.linkedin.com/in/vickus-r-botha/',type = 'linkedin')
+                                                    socialButton(url = 'https://www.linkedin.com/in/vickus-r-botha/',type = 'linkedin'),
+                                                    tags$br(),tags$br()),
+                                                    column(6,
+                                                    tags$p(strong("Hobbies & Interest: ")),
+                                                    p(dashboardLabel("3D printing", status = "primary"),
+                                                           dashboardLabel("Programming", status = "primary"),
+                                                           dashboardLabel("Gaming", status = "primary"),
+                                                           dashboardLabel("Reading ", status = "primary")),
+                                                    strong('Languages:'),
+                                                        p("Afrikaans: Native",br(), 'English: Speak and write')
+                                                        
+                                                    )
                                                     
                                                     
                                                 )
-                                            ),
-                                            tabBox(title = '',
+                                            )),
+                                            fluidRow(
+                                            tabBox(title = '',width = 12,
                                                    tabPanel(title = 'Skills',
                                                             plotlyOutput('skills')),
                                                    tabPanel(title = "Courses",
@@ -113,33 +135,28 @@ ui <- dashboardPagePlus(title = 'Vickus Botha CV',skin = 'blue',
                                                    ),
                                                    tabPanel(title = 'Projects',
                                                             tags$ul('R Personal Projects :',
-                                                                    tags$li(tags$a('Mapify',href=''))
+                                                                    tags$li(tags$a('Mapify',href=' https://vickus-botha.shinyapps.io/mapify/'))
                                                                     
                                                                     
                                                             ),
                                                             tags$ul('R Freelance Projects :',
-                                                                    tags$li(tags$a('Finland Map',href='')),
-                                                                    tags$li(tags$a('Football Game',href=''))
+                                                                    tags$li(tags$a('Finland Map',href='https://rentaldata.shinyapps.io/rental_data_antti/')),
+                                                                    tags$li(tags$a('Football Game',href='https://drive.google.com/drive/folders/1lCk2bFTpiHabLyTsSRj1XHc00byRGrr7?usp=sharing'))
                                                                     
                                                             ),
                                                             tags$ul('3D Printing Projects :',
-                                                                    tags$li(tags$a('Radio Frequency Scanners',href='')),
-                                                                    tags$li(tags$a('Mining Equipment Models',href='')),
-                                                                    tags$li(tags$a('VESA mounts for schools',href=''))
+                                                                    tags$li(tags$a('Radio Frequency Scanners - Replacement Battery Clips',href='https://drive.google.com/drive/folders/1V2PF5nIqDV68uMlNPf0o-EFJlqG-ydtH?usp=sharing'))#,
+                                                                    #  tags$li(tags$a('Mining Equipment Models',href='')),
+                                                                    #tags$li(tags$a('VESA mounts',href=''))
                                                                     
                                                                     
                                                             )
-                                                   ),
-                                                   tabPanel(title = 'Hobbies & Interest',
-                                                            dashboardLabel("3D printing", status = "primary"),
-                                                            dashboardLabel("Programming", status = "primary"),
-                                                            dashboardLabel("Gaming", status = "primary"),
-                                                            dashboardLabel("Reading ", status = "primary")
-                                                            
-                                                            
                                                    )
                                                    
-                                            ),
+                                            ))),
+                                        
+                                            
+                                           column(6,
                                             box(
                                                 title = "Employment History",
                                                 status = "info",
@@ -153,10 +170,11 @@ ui <- dashboardPagePlus(title = 'Vickus Botha CV',skin = 'blue',
                                                 
                                                 
                                             ))
+                                           )
                                 )
                             )
-                            
                         )
+                        
                         
 )
 
@@ -209,6 +227,7 @@ server <- function(input, output) {
         
         timelineBlock(
             timelineEnd(),
+            
             temp6,
             temp5,
             temp4,

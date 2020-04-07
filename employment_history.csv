@@ -31,17 +31,25 @@ WMS Process Engineer,day to day,12,2,Updating system configuration.,Takealot.com
 WMS Process Engineer,day to day,12,3,Error handling and resolution.,Takealot.com,2016/10/01,2017/07/31,retweet
 WMS Process Engineer,day to day,12,4,Production queries.,Takealot.com,2016/10/01,2017/07/31,retweet
 WMS Process Engineer,day to day,12,5,Contributing to system enhancements and development,Takealot.com,2016/10/01,2017/07/31,retweet
-Supply Chain Analyst,notable work,20,0,"End-to-end simulation of the supply chain with the incorporation of the business forecast to translate the forecast into an
+Supply Chain Analyst,notable work,20,0,Simulation & Statistical Analysis,Takealot.com,2017/08/01,2019/11/30,boxes
+Supply Chain Analyst,notable work,20,1,"End-to-end simulation of the supply chain with the incorporation of the business forecast to translate the forecast into an
 operational daily plan. This would go on to form the basis of the budget model within the supply chain.",Takealot.com,2017/08/01,2019/11/30,boxes
-Supply Chain Analyst,notable work,21,0,"Built the platform for geospatial analysis so that more people could contribute to takealot.com delivery network, resulting in
+Supply Chain Analyst,notable work,21,0,Web Development & Reactive Programming,Takealot.com,2017/08/01,2019/11/30,map-marked-alt
+Supply Chain Analyst,notable work,21,1,"Built the platform for geospatial analysis, in R Shiny, so that more people could contribute to takealot.com delivery network, resulting in
 5-7% additional allocation into the takealot delivery network.",Takealot.com,2017/08/01,2019/11/30,map-marked-alt
-Supply Chain Analyst,notable work,22,0,"Perform various GIS analyses, identifying areas where takealot needs to deliver to, this leads to more orders into the takealot
+Supply Chain Analyst,notable work,22,0,Spatial Analysis,Takealot.com,2017/08/01,2019/11/30,globe-africa
+Supply Chain Analyst,notable work,22,1,"Perform various GIS analyses, identifying areas where takealot needs to deliver to, this leads to more orders into the takealot
 network and drives a minimum of R2 million cost saving. Together with using clustering to identify where the takealot network
 can grow towards, further driving cost savings.",Takealot.com,2017/08/01,2019/11/30,globe-africa
-Supply Chain Analyst,notable work,23,0,"Apply machine learning methods to automate forecasting in MR.D Food orders. This allowed for scaled forecasting for the
+Supply Chain Analyst,notable work,23,0,Machine Learning & Forecasting,Takealot.com,2017/08/01,2019/11/30,laptop-code
+Supply Chain Analyst,notable work,23,1,"Apply machine learning methods to automate forecasting in MR.D Food orders. This allowed for scaled forecasting for the
 delivery hubs, this lead to a 20~30% improvement in forecasting.",Takealot.com,2017/08/01,2019/11/30,laptop-code
-Supply Chain Analyst,notable work,24,0,"Performing budget functions that serve as the input for warehouse storage and operational requirements this analysis
+Supply Chain Analyst,notable work,24,0,Planning & Budgeting,Takealot.com,2017/08/01,2019/11/30,money-bill-alt
+Supply Chain Analyst,notable work,24,1,"Performing budget functions that serve as the input for warehouse storage and operational requirements this analysis
 translates into capacity upgrades for stock and workforce including the branches for the network.",Takealot.com,2017/08/01,2019/11/30,money-bill-alt
-Supply Chain Analyst,notable work,25,0,Sizing of various facility and equipment assets.,Takealot.com,2017/08/01,2019/11/30,warehouse
-Supply Chain Analyst,notable work,26,0,Upskilling team members in introducing them to new methods and approaches to problems.,Takealot.com,2017/08/01,2019/11/30,chalkboard-teacher
-Supply Chain Analyst,notable work,27,0,Create and improve database for supply chain which forms the basis for supply chain planning today,Takealot.com,2017/08/01,2019/11/30,database
+Supply Chain Analyst,notable work,25,0,Facility Sizing,Takealot.com,2017/08/01,2019/11/30,warehouse
+Supply Chain Analyst,notable work,25,1,Sizing of various facility and equipment assets.,Takealot.com,2017/08/01,2019/11/30,warehouse
+Supply Chain Analyst,notable work,26,0,Teaching & Training,Takealot.com,2017/08/01,2019/11/30,chalkboard-teacher
+Supply Chain Analyst,notable work,26,1,Upskilling team members in introducing them to new methods and approaches to problems.,Takealot.com,2017/08/01,2019/11/30,chalkboard-teacher
+Supply Chain Analyst,notable work,27,0,Database Design & Modeling,Takealot.com,2017/08/01,2019/11/30,database
+Supply Chain Analyst,notable work,27,1,Create and improve database for supply chain which forms the basis for supply chain planning today,Takealot.com,2017/08/01,2019/11/30,database
